@@ -1,0 +1,130 @@
+body{
+    background:#1e1e1e;
+    color:#fff;
+    font-family:Arial,sans-serif;
+    margin:20px;
+}
+
+.container{
+    max-width:1800px;
+    margin:auto;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.topPanel{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.box{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+label{
+    font-weight:bold;
+}
+
+textarea{
+    width:100%;
+    min-height:250px;
+    resize:vertical;
+    padding:12px;
+    background:#2b2b2b;
+    color:#fff;
+    border:1px solid #444;
+    border-radius:6px;
+    font-size:14px;
+}
+
+input[type="file"]{
+    padding:10px;
+    background:#2b2b2b;
+    border:1px solid #444;
+    border-radius:6px;
+    color:white;
+}
+
+.buttons{
+    display:flex;
+    gap:10px;
+}
+
+button{
+    border:none;
+    border-radius:6px;
+    padding:10px 20px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.importBtn{
+    background:#4CAF50;
+    color:white;
+}
+
+.exportBtn{
+    background:#ff9800;
+    color:white;
+}
+
+.delete{
+    background:#f44336;
+    color:white;
+}
+
+.stats{
+    display:flex;
+    gap:30px;
+    margin-bottom:20px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th{
+    background:#333;
+}
+
+th,
+td{
+    border:1px solid #444;
+    padding:10px;
+    text-align:center;
+}
+
+tr:nth-child(even){
+    background:#252525;
+}
+
+tr:hover{
+    background:#303030;
+}
+
+select{
+    background:#2b2b2b;
+    color:white;
+    border:1px solid #555;
+    border-radius:4px;
+    padding:5px;
+}
+
+small{
+    font-size:11px;
+}
+
+#total{
+    color:#4CAF50;
+    font-size:22px;
+}

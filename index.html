@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Przenosin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Kalkulator Przenosin Created by Strokes</h1><br>
+
+    
+
+    <div class="topPanel">
+
+        <div class="box">
+
+            <label>Baza danych (baza.csv)</label>
+
+            <input
+                type="file"
+                id="csvFile"
+                accept=".csv">
+
+        </div>
+
+        <div class="box">
+
+            <label>Log z Margonem</label>
+
+            <textarea
+                id="logInput"
+                placeholder="Wklej log tutaj..."></textarea>
+
+        </div>
+
+        <div class="buttons">
+
+            <button
+                class="importBtn"
+                onclick="importLog()">
+
+                Importuj
+
+            </button>
+
+            <button
+                class="exportBtn"
+                onclick="exportTXT()">
+
+                Eksport TXT
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="stats">
+
+        <div>
+            Znaleziono:
+            <span id="foundCount">0</span>
+        </div>
+
+        <div>
+            Brak w bazie:
+            <span id="missingCount">0</span>
+        </div>
+
+        <div>
+            Suma:
+            <span id="total">0</span>m
+        </div>
+
+    </div>
+
+    <table>
+
+        <thead>
+
+        <tr>
+
+            <th>ID</th>
+
+            <th>Nazwa</th>
+
+            <th>ES</th>
+
+            <th>Tier</th>
+
+            <th>Lega</th>
+
+            <th>Lvl</th>
+
+            <th>Wartość</th>
+
+            <th>Usuń</th>
+
+        </tr>
+
+        </thead>
+
+        <tbody id="tableBody">
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
