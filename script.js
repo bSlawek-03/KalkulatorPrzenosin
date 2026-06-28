@@ -79,7 +79,7 @@ function calculate(item) {
     if (!item.es)
         return 0;
 
-    return Math.floor(
+    return Math.round(
         item.es *
         tierPrices[item.tier] *
         legaMultipliers[item.lega] *
