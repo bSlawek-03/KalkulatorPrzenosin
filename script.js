@@ -79,12 +79,13 @@ function calculate(item) {
     if (!item.es)
         return 0;
 
-    return Math.round(
+    const value =
         item.es *
         tierPrices[item.tier] *
         legaMultipliers[item.lega] *
-        getLevelMultiplier(item.lvl)
-    );
+        getLevelMultiplier(item.lvl);
+
+    return Math.floor(value + 0.000001);
 }
 
 function importLog() {
